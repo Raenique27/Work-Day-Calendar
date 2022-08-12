@@ -77,5 +77,15 @@ var textContentHours = function () {
         $("#textContentThree").addClass("present");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");        
+    } else if (moment().isAfter(moment().hour(14))) {
+        $("#textContentNine").addClass("past");
+        $("#textContentTen").addClass("past");
+        $("#textContentEleven").addClass("past");
+        $("#textContentTwelve").addClass("past");
+        $("#textContentOne").addClass("past");
+        $("#textContentTwo").addClass("present");
+        $("#textContentThree").addClass("future");
+        $("#textContentFour").addClass("future");
+        $("#textContentFive").addClass("future");
     }
 }
