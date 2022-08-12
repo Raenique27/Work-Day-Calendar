@@ -29,7 +29,7 @@ var saveTextContent = function () {
 
 $(".saveBtn").on("click", saveTextContent);
 
- var retrieveTextContent = function() {
+var retrieveTextContent = function () {
 
     $("#textContentNine").val(localStorage.getItem("Nine-9"));
     $("#textContentTen").val(localStorage.getItem("Ten-10"));
@@ -44,9 +44,18 @@ $(".saveBtn").on("click", saveTextContent);
 
 retrieveTextContent();
 
+var textContentHours = function () {
+    $(".description").removeClass("past present future");
 
-
-
-
-
-
+    if (moment().isAfter(moment().hour(17))) {
+        $("#textContentNine").addClass("past");
+        $("#textContentTen").addClass("past");
+        $("#textContentEleven").addClass("past");
+        $("#textContentTwelve").addClass("past");
+        $("#textContentOne").addClass("past");
+        $("#textContentTwo").addClass("past");
+        $("#textContentThree").addClass("past");
+        $("#textContentFour").addClass("past");
+        $("#textContentFive").addClass("present");
+    }
+}
