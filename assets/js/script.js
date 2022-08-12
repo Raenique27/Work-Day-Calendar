@@ -127,5 +127,15 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    }
-}
+    } else if (moment().isAfter(moment().hour(9))) {
+        $("#textContentNine").addClass("present");
+        $("#textContentTen").addClass("future");
+        $("#textContentEleven").addClass("future");
+        $("#textContentTwelve").addClass("future");
+        $("#textContentOne").addClass("future");
+        $("#textContentTwo").addClass("future");
+        $("#textContentThree").addClass("future");
+        $("#textContentFour").addClass("future");
+        $("#textContentFive").addClass("future");
+    } 
+};
