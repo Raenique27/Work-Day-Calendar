@@ -56,7 +56,7 @@ var textContentHours = function () {
         $("#textContentTwo").addClass("past");
         $("#textContentThree").addClass("past");
         $("#textContentFour").addClass("past");
-        $("#textContentFive").addClass("present");
+        $("#textContentFive").addClass("past");
     } else if (moment().isAfter(moment().hour(16))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
@@ -65,9 +65,19 @@ var textContentHours = function () {
         $("#textContentOne").addClass("past");
         $("#textContentTwo").addClass("past");
         $("#textContentThree").addClass("past");
-        $("#textContentFour").addClass("present");
-        $("#textContentFive").addClass("future");
+        $("#textContentFour").addClass("past");
+        $("#textContentFive").addClass("present");
     } else if (moment().isAfter(moment().hour(15))) {
+        $("#textContentNine").addClass("past");
+        $("#textContentTen").addClass("past");
+        $("#textContentEleven").addClass("past");
+        $("#textContentTwelve").addClass("past");
+        $("#textContentOne").addClass("past");
+        $("#textContentTwo").addClass("past");
+        $("#textContentThree").addClass("past");
+        $("#textContentFour").addClass("present");
+        $("#textContentFive").addClass("future");        
+    } else if (moment().isAfter(moment().hour(14))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
         $("#textContentEleven").addClass("past");
@@ -76,8 +86,8 @@ var textContentHours = function () {
         $("#textContentTwo").addClass("past");
         $("#textContentThree").addClass("present");
         $("#textContentFour").addClass("future");
-        $("#textContentFive").addClass("future");        
-    } else if (moment().isAfter(moment().hour(14))) {
+        $("#textContentFive").addClass("future");
+    } else if (moment().isAfter(moment().hour(13))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
         $("#textContentEleven").addClass("past");
@@ -87,7 +97,7 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    } else if (moment().isAfter(moment().hour(13))) {
+    } else if (moment().isAfter(moment().hour(12))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
         $("#textContentEleven").addClass("past");
@@ -97,7 +107,7 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    } else if (moment().isAfter(moment().hour(12))) {
+    } else if (moment().isAfter(moment().hour(11))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
         $("#textContentEleven").addClass("past");
@@ -107,7 +117,7 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    } else if (moment().isAfter(moment().hour(11))) {
+    } else if (moment().isAfter(moment().hour(10))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("past");
         $("#textContentEleven").addClass("present");
@@ -117,7 +127,7 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    } else if (moment().isAfter(moment().hour(10))) {
+    } else if (moment().isAfter(moment().hour(9))) {
         $("#textContentNine").addClass("past");
         $("#textContentTen").addClass("present");
         $("#textContentEleven").addClass("future");
@@ -127,17 +137,17 @@ var textContentHours = function () {
         $("#textContentThree").addClass("future");
         $("#textContentFour").addClass("future");
         $("#textContentFive").addClass("future");
-    } else if (moment().isAfter(moment().hour(9))) {
-        $("#textContentNine").addClass("present");
-        $("#textContentTen").addClass("future");
-        $("#textContentEleven").addClass("future");
-        $("#textContentTwelve").addClass("future");
-        $("#textContentOne").addClass("future");
-        $("#textContentTwo").addClass("future");
-        $("#textContentThree").addClass("future");
-        $("#textContentFour").addClass("future");
-        $("#textContentFive").addClass("future");
-    } 
+    } else if (moment().isAfter(moment().hour(8))) {
+        $("#event-hour-nine").addClass("present");
+        $("#event-hour-ten").addClass("future");
+        $("#event-hour-eleven").addClass("future");
+        $("#event-hour-twelve").addClass("future");
+        $("#event-hour-one").addClass("future");
+        $("#event-hour-two").addClass("future");
+        $("#event-hour-three").addClass("future");
+        $("#event-hour-four").addClass("future");
+        $("#event-hour-five").addClass("future");
+      }
 };
 
 textContentHours();
