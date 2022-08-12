@@ -139,3 +139,5 @@ var textContentHours = function () {
         $("#textContentFive").addClass("future");
     } 
 };
+
+textContentHours();
